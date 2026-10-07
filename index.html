@@ -90,7 +90,7 @@
 <!--block3-->
             <div class="border-1 border-rose-700 rounded-2xl py-1 pr-4 pl-4 w-45 flex bg-rose-700/30 font-bold text-red-700 pt-4 ">
                 <i class="bi bi-truck"></i>
-                <p>Urgence Ambulance</p>
+                <p class="text-center">Urgence Ambulance</p>
             </div>
                 </div>
         </section>
@@ -103,7 +103,7 @@
 
 
 <!--patients-->
-    <a href="#espace patients" class="">
+    <a href="#espace patients" class="">patient
         <div class="mx-170">
             <p class="text-sm font-bold text-blue-950 border-1 border-blue-300 bg-blue-100 h-5 w-50 rounded-3xl text-center mb-5">Espace Usagers & Patients</p>
         </div>
@@ -142,35 +142,6 @@
                 <p class="text-center text-gray-600">Consultez depuis chez vous via une salle d’attente virtuelle sécurisée. Échange sécurisé de bilans et ordonnance numérique validée électroniquement.</p>
             </div>
         </div>
-
- <!-- Annuaire Interactif des Praticiens avec Filtrage Réactif -->
-            <div id="recherche-medecins" class="mt-14 bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-                    <div>
-                        <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2">
-                            <i class="fa-solid fa-stethoscope text-hospital-600"></i>
-                            Annuaire en Direct des Médecins Disponibles
-                        </h3>
-                        <p class="text-sm text-slate-500">Filtrage instantané par spécialité et prise de rendez-vous immédiate</p>
-                    </div>
-
-                    <!-- Sélecteur de Spécialités -->
-                    <div class="flex flex-wrap gap-2" id="specialty-filters">
-                        <button onclick="filterDoctors('all')" class="filter-btn active-filter px-3.5 py-1.5 rounded-full text-xs font-bold transition bg-hospital-600 text-white" data-filter="all">Tous</button>
-                        <button onclick="filterDoctors('Cardiologie')" class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-bold transition bg-white text-slate-700 border border-slate-300 hover:bg-slate-100" data-filter="Cardiologie">Cardiologie</button>
-                        <button onclick="filterDoctors('Pédiatrie')" class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-bold transition bg-white text-slate-700 border border-slate-300 hover:bg-slate-100" data-filter="Pédiatrie">Pédiatrie</button>
-                        <button onclick="filterDoctors('Médecine Générale')" class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-bold transition bg-white text-slate-700 border border-slate-300 hover:bg-slate-100" data-filter="Médecine Générale">Généraliste</button>
-                        <button onclick="filterDoctors('Neurologie')" class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-bold transition bg-white text-slate-700 border border-slate-300 hover:bg-slate-100" data-filter="Neurologie">Neurologie</button>
-                    </div>
-                </div>
-
-                <!-- Liste des Praticiens -->
-                <div id="doctors-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <!-- Généré dynamiquement en JS ci-dessous -->
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- SECTION 2 : POUR LES HÔPITAUX & PROFESSIONNELS DE SANTÉ -->
     <section id="services-hopitaux" class="py-20 bg-slate-900 text-white relative overflow-hidden">
